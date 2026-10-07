@@ -67,8 +67,11 @@
   .empty .mark{width:66px;height:66px;border-radius:19px;margin:0 auto 18px;display:grid;place-items:center;
     background:linear-gradient(135deg,var(--green-700),var(--green-deep));color:#fff;box-shadow:var(--shadow)}
   .empty .mark svg{width:34px;height:34px}
-  .empty h1{font-family:var(--display);font-weight:700;font-size:clamp(20px,4vw,26px);margin:0 0 8px;color:var(--green-deep)}
-  .empty p{color:var(--ink-soft);font-size:14.5px;line-height:1.6;max-width:520px;margin:0 auto 26px}
+  .empty .eyebrow{font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--green);opacity:.72;margin-bottom:11px}
+  .empty h1{font-family:var(--display);font-weight:700;font-size:clamp(21px,4.2vw,30px);line-height:1.15;margin:0 0 8px;color:var(--green-deep)}
+  .empty h1 span{color:var(--green)}
+  .empty .greet{font-family:var(--display);font-weight:600;font-size:clamp(14.5px,2.6vw,17px);color:var(--ink);margin:0 0 12px}
+  .empty p{color:var(--ink-soft);font-size:14.5px;line-height:1.6;max-width:540px;margin:0 auto 26px}
   .sugg{display:grid;grid-template-columns:repeat(2,1fr);gap:11px;max-width:620px;margin:0 auto;text-align:left}
   .sugg button{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 15px;cursor:pointer;
     font-family:var(--body);font-size:13.5px;font-weight:500;color:var(--ink);line-height:1.4;transition:.15s;display:flex;gap:10px;align-items:flex-start}
@@ -118,8 +121,10 @@
     <div class="mark">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
     </div>
-    <h1>Olá! Como posso ajudar?</h1>
-    <p>Sou a assistente interna da Acontece. Tire dúvidas sobre contratos, procedimentos, a Lei do Inquilinato e as ferramentas da equipe.</p>
+    <div class="eyebrow">Assistente dos Colaboradores</div>
+    <h1>Inteligência Artificial <span>da Acontece</span></h1>
+    <div class="greet">Olá! Como posso ajudar? 👋</div>
+    <p>Tire dúvidas sobre contratos, procedimentos, a Lei do Inquilinato e as ferramentas da equipe. Quando precisar de algo atual — índices, notícias ou mudanças na lei — também posso pesquisar na internet.</p>
     <div class="sugg" id="sugg"></div>
   </div>
 </main>
@@ -148,7 +153,7 @@
       "Como funciona o reajuste anual do aluguel?",
       "Qual sistema uso para avaliar um imóvel?",
       "Qual o prazo para o inquilino contestar a vistoria?",
-      "Como o locatário emite o boleto do aluguel?",
+      "Qual o IGP-M e o IPCA do mês atual?",
       "Multa por rescisão antecipada: como se calcula?",
       "Como peço acesso a um sistema interno?"
     ]
